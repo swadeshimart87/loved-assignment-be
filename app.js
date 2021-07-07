@@ -1,8 +1,11 @@
 const express = require('express');
 const app = express();
 var yahooFinance = require('yahoo-finance');
+const path = require('path');
 
 const port = process.env.PORT || 5000;
+
+console.log('env' + process.env.NODE_ENV  );
 
 app.get('/api', (req, res) => {
   const SYMBOLS = req.query && req.query.symbols && req.query.symbols.split(',');
