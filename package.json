@@ -1,0 +1,16 @@
+{
+  "name": "loved-assignment-be",
+  "version": "1.0.0",
+  "description": "this will be the api for the loved.com assignment",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nitin",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "yahoo-finance": "^0.3.7"
+  }
+}
