@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 var yahooFinance = require('yahoo-finance');
 
-const port = 3001
+const port = process.env.PORT || 5000;
 
 app.get('/app', (req, res) => {
   const SYMBOLS = req.query && req.query.symbols && req.query.symbols.split(',');
